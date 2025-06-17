@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sign Up - Book Review</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/sign-up.css">
+</head>
+<body>
+  <div class="signup-container">
+    <div class="form-section">
+        <h2>Ready to start your success story?</h2>
+        <p>Signup to our website and start leafing through your favorite literature today!</p>
+      <form id="signupForm">
+        <div class="mb-3">
+          <label for="fullName" class="form-label">Full Name</label>
+          <input type="text" id="fullName" class="form-control" required>
+        </div>
+        <div class="mb-3">
+          <label for="email" class="form-label">Email</label>
+          <input type="email" id="email" class="form-control" required>
+        </div>
+        <div class="mb-3">
+          <label for="interest" class="form-label">Area of Interest</label>
+          <input type="text" id="interest" class="form-control" required>
+        </div>
+        <div class="mb-3 form-check">
+          <input type="checkbox" id="terms" class="form-check-input" required>
+          <label for="terms" class="form-check-label">I agree to the <a href="#">Terms & Conditions</a></label>
+        </div>
+        <button type="submit" class="btn btn-primary w-100">Sign Up</button>
+      </form>
+    </div>
+  </div>
+<script src="javascript/sign-up.js"></script>
+</body>
+</html>

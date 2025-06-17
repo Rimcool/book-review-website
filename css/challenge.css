@@ -1,0 +1,141 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color:  #ccc2a4;
+  }
+
+/* Navbar css*/
+.top-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    background-color: #f5f5dc; /* Beige background */
+  }
+
+  .top-bar .logo {
+    font-family: 'Cursive', sans-serif;
+    font-size: 1.8rem;
+    font-weight: bold;
+  }
+
+  .top-bar .search-bar {
+    flex-grow: 1;
+    margin: 0 20px;
+  }
+
+  .top-bar .cart-login {
+    display: flex;
+    align-items: center;
+  }
+
+  .top-bar .cart-login a {
+    margin-left: 15px;
+    text-decoration: none;
+    color: #000;
+  }
+
+  .nav-bar {
+    background-color: #fff; /* White background */
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+  }
+
+  .nav-bar .nav-link {
+    color: #000;
+    font-weight: 500;
+  }
+
+  .nav-bar .nav-link:hover {
+    color: #71828e;
+  }
+  .search-bar input {
+    border-radius: 20px;
+    padding-right: 40px; /* Space for the icon */
+  }
+  
+  .search-bar i {
+    cursor: pointer; /* Make the icon clickable */
+  }
+h2 {
+    font-weight: bold;
+    color: #343a40;
+}
+
+.card {
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.card h5 {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+button {
+    margin-right: 5px;
+}
+
+textarea {
+    resize: none;
+}
+
+#discussion-section {
+    margin-top: 20px;
+}
+
+.comment {
+    background: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 10px;
+}
+
+/* Footer css*/
+.footer {
+    background-color: #343a40;
+    color: #f8f9fa;
+  }
+  
+  .footer h5 {
+    font-size: 1.25rem;
+    margin-bottom: 1rem;
+  }
+  
+  .footer p {
+    font-size: 0.9rem;
+    line-height: 1.5;
+  }
+  
+  .footer ul {
+    padding: 0;
+    list-style: none;
+  }
+  
+  .footer ul li {
+    margin-bottom: 0.5rem;
+  }
+  
+  .footer ul li a {
+    color: #f8f9fa;
+    transition: color 0.3s ease;
+  }
+  
+  .footer ul li a:hover {
+    color: #007bff;
+  }
+  
+  .footer .social-icons a {
+    font-size: 1.2rem;
+    transition: color 0.3s ease;
+  }
+  
+  .footer .social-icons a:hover {
+    color: #007bff;
+  }
+  
+  .footer .text-center {
+    border-top: 1px solid #495057;
+    padding-top: 1rem;
+    font-size: 0.85rem;
+  }

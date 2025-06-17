@@ -1,0 +1,542 @@
+body{
+  background-color:  #ccc2a4;
+}
+.top-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    background-color: #f5f5dc; /* Beige background */
+  }
+
+  .top-bar .logo {
+    font-family: 'Cursive', sans-serif;
+    font-size: 1.8rem;
+    font-weight: bold;
+  }
+
+  .top-bar .search-bar {
+    flex-grow: 1;
+    margin: 0 20px;
+  }
+
+  .top-bar .cart-login {
+    display: flex;
+    align-items: center;
+  }
+
+  .top-bar .cart-login a {
+    margin-left: 15px;
+    text-decoration: none;
+    color: #7b7979;
+  }
+
+  .nav-bar {
+    background-color: #fff; /* White background */
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+  }
+
+  .nav-bar .nav-link {
+    color: #000;
+    font-weight: 500;
+  }
+
+  .nav-bar .nav-link:hover {
+    color: #71828e;
+  }
+  .search-bar input {
+    border-radius: 20px;
+    padding-right: 40px; /* Space for the icon */
+  }
+  
+  .search-bar i {
+    cursor: pointer; /* Make the icon clickable */
+  }
+  /*hero section*/
+  .hero {
+    background-image: url('../image/Use\ an\ image\ related\ to\ books\ or\ reading.jpeg'); /* Use an image related to books or reading */
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+    padding: 80px 20px;
+  }
+  
+  .hero h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+  }
+  
+  .hero p {
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+  }
+  
+  .search-bar {
+    padding: 10px;
+    width: 60%;
+    max-width: 400px;
+    font-size: 1rem;
+    margin-bottom: 20px;
+  }
+  
+  .cta-button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    background-color: #D4AF37;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .cta-button:hover {
+    background-color: #e67e22;
+  }
+  /* recommend section*/
+  .recommendations {
+    padding: 50px 20px;
+    text-align: center;
+  }
+  
+  .recommendations h2 {
+    font-size: 2rem;
+    margin-bottom: 30px;
+  }
+  
+  .book-carousel {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+    overflow-x: auto;
+  }
+  
+  .book-item {
+    width: 200px;
+    text-align: center;
+  }
+  
+  .book-item img {
+    width: 150px; /* Adjust the width as needed */
+    height: 200px; /* Maintain a consistent height */
+    object-fit: cover; /* Ensures the image is cropped proportionally */
+    border-radius: 10px; /* Optional: for rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional: for a shadow effect */
+  }
+  
+  .book-item h3 {
+    font-size: 1.2rem;
+    margin-top: 10px;
+  }
+  
+  .book-item p {
+    font-size: 1rem;
+    color: #555;
+  }
+  /*featured book of the month*/
+  .featured-book {
+    padding: 50px 20px;
+    background-color: #f4f4f4;
+    text-align: center;
+  }
+  
+  .featured-book h2 {
+    font-size: 2rem;
+    margin-bottom: 30px;
+  }
+  
+  .book-detail {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+  }
+  
+  .book-detail img {
+    width: 400px;
+    height: 700px;
+    border-radius: 10px;
+  }
+  
+  .book-info h3 {
+    font-size: 1.5rem;
+    margin-top: 0;
+  }
+  
+  .read-review {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #f39c12;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+  }
+  
+  .read-review:hover {
+    background-color: #e67e22;
+  }
+/*User Testimonal */ 
+.carousel-item {
+  text-align: center;
+  padding: 20px;
+}
+
+.carousel-item img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border: 2px solid #ddd;
+}
+
+.stars {
+  color: #ffc107; /* Gold color for stars */
+  font-size: 1.2rem;
+}
+/* Top reviewer*/
+.card {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add a subtle shadow */
+  border: none; /* Remove card borders */
+}
+
+.cardimg img {
+  width: 70%;
+}
+
+.card-title {
+  font-size: 1.2rem;
+  color: #333;
+}
+
+.card-text {
+  font-size: 0.9rem;
+  color: #666;
+}
+
+.fw-bold {
+  color: #000;
+}
+
+/* upcoming books */
+/* Card Styling */
+#book-cards-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.book-card {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  overflow: hidden;
+  width: 300px;
+  transition: transform 0.3s;
+  background-color: #fff;
+}
+
+.book-card:hover {
+  transform: scale(1.05);
+}
+
+.book-card img {
+  width: 100%;
+  height: auto;
+}
+
+.book-card .card-content {
+  padding: 10px;
+}
+
+.book-card .card-content h3 {
+  margin: 0;
+  font-size: 1.2em;
+}
+
+.book-card .card-content p {
+  margin: 5px 0;
+  color: #555;
+}
+.card-container {
+  perspective: 1000px;
+}
+
+/*.book-card {
+  width: 300px;
+  height: 200px;
+  background: linear-gradient(135deg, #ff7eb3, #ff758c);
+  border-radius: 15px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform-style: preserve-3d;
+  transition: transform 0.3s ease;
+}
+
+.card-content  {
+  text-align: center;
+  transform: translateZ(50px);
+}
+
+.card:hover {
+  transform: rotateY(15deg) rotateX(10deg);
+}*/
+
+/*.card {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+  border-radius: 8px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease; 
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); 
+}
+
+.card img {
+  border-radius: 50%;
+  border: 2px solid #f8f9fa;
+  padding: 5px;
+}*/
+/* Image Styling */
+
+/* Text Alignment */
+.card-title {
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+.card-text {
+  font-size: 0.9rem;
+  color: #555;
+}
+
+/* Grid Alignment */
+.row {
+  justify-content: center; /* Center align the cards */
+}
+/* Challenges*/
+/* Reading Challenges Section */
+.card {
+  border: none;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.card-title {
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: #343a40;
+}
+
+.card-text {
+  font-size: 0.95rem;
+  color: #555;
+}
+
+.btn-primary {
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.btn-primary:hover {
+  background-color: #0056b3;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+/* Author Spotlight Section*/
+/* Author Spotlights Section */
+
+
+.card-img-top:hover {
+  transform: scale(1.1);
+  border-color: #007bff;
+}
+
+.card {
+  border: none;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.card-title {
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: #343a40;
+}
+
+.card-text {
+  font-size: 0.95rem;
+  color: #555;
+}
+
+.btn-primary {
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.btn-primary:hover {
+  background-color: #0056b3;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+/*Newslatter*/
+/* Newsletter Section */
+.newsletter-section {
+  background-image: url('images/newsletter-bg.jpg'); /* Add a background image if needed */
+  background-size: cover;
+  background-position: center;
+  background-blend-mode: overlay;
+  background-color: rgba(0, 0, 0, 0.7); /* Dark overlay for text readability */
+}
+
+.newsletter-section h2 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #f8f9fa;
+}
+
+.newsletter-section p {
+  font-size: 1.1rem;
+  color: #ddd;
+}
+
+.newsletter-section input {
+  border: none;
+  border-radius: 5px;
+  padding: 10px 15px;
+}
+
+.newsletter-section input:focus {
+  outline: none;
+  box-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
+}
+
+.newsletter-section button {
+  background-color: #007bff;
+  border: none;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.newsletter-section button:hover {
+  background-color: #0056b3;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.newsletter-section small {
+  display: block;
+  margin-top: 15px;
+  color: #aaa;
+}
+/* Featured Bookstores */
+.card-img-top {
+  transition: transform 0.3s ease, border-color 0.3s ease;
+  border: 2px solid #ddd;
+}
+
+.card {
+  border: none;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+/* Gamification Elements */
+.card img {
+  border-radius: 50%;
+  border: 2px solid #f8f9fa;
+  padding: 5px;
+}
+
+.card {
+  border: none;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  padding: 50px 0;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+/* Social Media Integration */
+.fa-facebook:hover {
+  color: #3b5998;
+}
+
+.fa-twitter:hover {
+  color: #1da1f2;
+}
+
+.fa-instagram:hover {
+  color: #e4405f;
+}
+
+.fa-pinterest:hover {
+  color: #bd081c;
+}
+
+.blockquote {
+  font-size: 1.2rem;
+  color: #555;
+  border-left: 5px solid #007bff;
+  padding-left: 15px;
+}
+/* Footer Styling */
+.footer {
+  background-color: #343a40;
+  color: #f8f9fa;
+}
+
+.footer h5 {
+  font-size: 1.25rem;
+  margin-bottom: 1rem;
+}
+
+.footer p {
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+
+.footer ul {
+  padding: 0;
+  list-style: none;
+}
+
+.footer ul li {
+  margin-bottom: 0.5rem;
+}
+
+.footer ul li a {
+  color: #f8f9fa;
+  transition: color 0.3s ease;
+}
+
+.footer ul li a:hover {
+  color: #007bff;
+}
+
+.footer .social-icons a {
+  font-size: 1.2rem;
+  transition: color 0.3s ease;
+}
+
+.footer .social-icons a:hover {
+  color: #007bff;
+}
+
+.footer .text-center {
+  border-top: 1px solid #495057;
+  padding-top: 1rem;
+  font-size: 0.85rem;
+}
+
+@media only screen and (max-width: 1024px) {
+  .top-bar .logo {
+    font-size: 1.5rem;
+  }
+}
